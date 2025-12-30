@@ -50,28 +50,6 @@ export const Header = () => {
     { name: "Contact", path: "contact", id: "contact" },
   ];
 
-  const handleScrollToSection = (e, id) => {
-    e.preventDefault();
-
-    // If we're not on the home page, navigate to home first
-    if (location.pathname !== "/") {
-      // Navigate to home page with hash
-      window.location.href = `/#${id}`;
-      setIsSidebarOpen(false);
-      return;
-    }
-
-    // If we're already on home page, scroll to section
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-    setIsSidebarOpen(false);
-  };
-
   const handleSidebarClick = (e) => {
     if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
       setIsSidebarOpen(false);
@@ -122,7 +100,7 @@ export const Header = () => {
 
       {/* Initial Header - Disappears when scrolling */}
       <div
-        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] max-w-7xl h-20 bg-white/20 backdrop-blur-lg rounded-full px-4 lg:px-8 z-40 transition-all duration-500 ${
+        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] max-w-7xl h-16 bg-white/20 backdrop-blur-lg rounded-full px-4 lg:px-8 z-40 transition-all duration-500 ${
           isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
@@ -177,7 +155,7 @@ export const Header = () => {
         </button>
 
         {/* Desktop Layout - Split Screen */}
-        <div className="hidden lg:flex h-full w-full">
+        <div className="hidden bg-black z-9999 lg:flex h-full w-full">
           {/* Left Side - Navigation Links (40% width) */}
           <div className="w-2/5 h-full flex items-center justify-center relative">
             {/* Margin Line in the center */}

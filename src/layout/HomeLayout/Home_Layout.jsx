@@ -6,7 +6,9 @@ const Home_Layout = () => {
   return (
     <div className="font-serif">
       <Header />
-      <Outlet />
+      <div className="pt-20 bg-black">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

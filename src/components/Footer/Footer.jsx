@@ -7,7 +7,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <div className="bg-black text-white p-4 px-[30px] min-h-[85vh] w-full sm:px-[40px] md:px-[80px] py-5">
+    <div className="bg-black text-white p-4 px-7.5 min-h-[85vh] w-full sm:px-10 md:px-20 py-5">
       <div className=" flex items-center justify-between border-b border-gray-600 pb-6 ">
         <div className=" w-full  justify-between flex">
           <div>
@@ -58,24 +58,24 @@ export const Footer = () => {
               </h1>
             </Link>
           </div>
-          <div className="flex items-center md:gap-2 lg:gap-6 mt-16">
-            <div className="border text-[13px] sm:text-[18px] border-gray-700 py-3 px-6 rounded-full hover:bg-white hover:text-black duration-500 transition-all  ease-in-out">
+          <div className="flex items-center md:gap-2 lg:gap-6 mt-16 [@media(max-width:380px)]:block">
+            <div className="border text-center text-[13px] sm:text-[18px] border-gray-700 py-3 px-6 rounded-full hover:bg-white hover:text-black duration-500 transition-all  ease-in-out">
               info@thestackly.com
             </div>
-            <div className="border text-[13px] sm:text-[18px] border-gray-700 text-nowrap py-3 px-6 rounded-full hover:bg-white hover:text-black duration-500 transition-all  ease-in-out">
+            <div className="border text-center text-[13px] sm:text-[18px] border-gray-700 text-nowrap py-3 px-6 rounded-full hover:bg-white hover:text-black duration-500 transition-all  ease-in-out">
               +91 70107 92745
             </div>
           </div>
         </div>
         <div className="w-full sm:w-[40%] flex items-center justify-around">
-          <div className="w-[300px] leading-8">
+          <div className="w-[75] leading-8">
             <h1 className="tracking-widest">USEFULL LINKS</h1>
             <ul className="mt-4 space-y-2">
               {["careers", "about", "services", "contact"].map((item) => (
                 <li key={item}>
                   <Link to={`/${item}`} className="relative inline-block group">
                     {item.charAt(0).toUpperCase() + item.slice(1)}
-                    <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-px bg-white transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}

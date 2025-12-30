@@ -30,14 +30,14 @@ export const PreLoader = ({ onFinish }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] overflow-hidden ${
+      className={`fixed inset-0 z-9999 overflow-hidden ${
         exiting ? "pointer-events-none" : ""
       }`}
     >
       {/* Main loading container */}
       <div
         className={`
-        absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 
+        absolute inset-0 bg-linear-to-br from-gray-900 via-black to-gray-900 
         text-white flex items-center justify-center
         transition-transform duration-1000 ease-in-out
         ${splitAnimation ? "-translate-y-full" : "translate-y-0"}
