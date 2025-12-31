@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-input,
-textarea {
+.input,
+.textarea {
   color: white !important;
 }

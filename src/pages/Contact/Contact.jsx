@@ -192,7 +192,7 @@ export const Contact = () => {
                       {...register("first_name", {
                         required: "First name is required",
                       })}
-                      className="w-full px-5 py-4  caret-white text-white  max-w-375:py-3 border-2 border-gray-600 rounded-xl bg-gray-700  focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
+                      className="w-full input px-5 py-4  caret-white text-white  max-w-375:py-3 border-2 border-gray-600 rounded-xl bg-gray-700  focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
                       placeholder="Your first name"
                     />
                     <FaUser className="absolute right-4 top-4 text-gray-400 text-xl" />
@@ -218,7 +218,7 @@ export const Contact = () => {
                       {...register("last_name", {
                         required: "Last name is required",
                       })}
-                      className="w-full max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
+                      className="w-full input max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
                       placeholder="Your last name"
                     />
                     <FaUser className="absolute right-4 top-4 text-gray-400 text-xl" />
@@ -250,7 +250,7 @@ export const Contact = () => {
                           message: "Invalid email address",
                         },
                       })}
-                      className="w-full max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
+                      className="w-full input max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
                       placeholder="Your email address"
                     />
                     <FaEnvelope className="absolute right-4 top-4 text-gray-400 text-xl" />
@@ -274,7 +274,7 @@ export const Contact = () => {
                       {...register("phone_number", {
                         required: "Phone number is required",
                       })}
-                      className="w-full max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
+                      className="w-full input max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
                       placeholder="Your phone number"
                     />
                     <FaPhone className="absolute right-4 top-4 text-gray-400 text-xl" />
@@ -301,7 +301,7 @@ export const Contact = () => {
                     {...register("subject", {
                       required: "Subject is required",
                     })}
-                    className="w-full max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
+                    className="w-full input max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors placeholder-gray-400"
                     placeholder="What is this regarding?"
                   />
                   <FaTag className="absolute right-4 top-4 text-gray-400 text-xl" />
@@ -325,7 +325,7 @@ export const Contact = () => {
                     {...register("message", {
                       required: "Message is required",
                     })}
-                    className="w-full max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors resize-vertical placeholder-gray-400"
+                    className="w-full textarea max-w-375:py-3 px-5 py-4 border-2 border-gray-600 rounded-xl bg-gray-700 text-gray-100 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-colors resize-vertical placeholder-gray-400"
                     placeholder="How can we help you?"
                   ></textarea>
                   <FaComment className="absolute right-4 top-4 text-gray-400 text-xl" />

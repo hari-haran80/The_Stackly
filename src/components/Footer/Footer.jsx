@@ -84,7 +84,7 @@ export const Footer = () => {
               <input
                 type="email"
                 placeholder="Type your email"
-                className="py-2 px-5 w-full border border-gray-600 rounded-full "
+                className="py-2 px-5 w-full input border placeholder-gray-400 border-gray-600 rounded-full "
               />
               <MdOutlineArrowOutward className="absolute text-2xl right-5 top-3" />
             </div>
@@ -92,7 +92,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className=" flex mt-2 items-center justify-center h-20 p-4 bg-gray-950">
-        <p className="text-[15px] sm:text-md text-center">© 2025 Copyright stackly. All Rights Reserved.</p>
+        <p className="text-[15px] sm:text-md text-center">
+          © 2025 Copyright stackly. All Rights Reserved.
+        </p>
       </div>
     </div>
   );
