@@ -68,7 +68,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="w-full sm:w-[40%] flex items-center justify-around">
-          <div className="w-[75] leading-8">
+          <div className="w-75 leading-8">
             <h1 className="tracking-widest">USEFULL LINKS</h1>
             <ul className="mt-4 space-y-2">
               {["careers", "about", "services", "contact"].map((item) => (
