@@ -93,12 +93,12 @@ const JobDescription = ({ jobId, onClose }) => {
       >
         {/* Close Icon */}
         <AiOutlineClose
-          className="bg-pink-600 cursor-pointer duration-500 ease-in-out top-24 right-[8%] md:right-[10%] md:top-24 lg:right-[10%] xl:top-[105px] xl:right-[24%] lg:top-[95px] z-50 p-2 text-[30px] absolute rounded-md font-bold 0"
+          className="bg-pink-600 cursor-pointer duration-500 ease-in-out top-24 right-[8%] md:right-[10%] md:top-24 lg:right-[10%] xl:top-26.25 xl:right-[24%] lg:top-23.75 z-50 p-2 text-[30px] absolute rounded-md font-bold 0"
           onClick={handleClose}
         />
 
         {/* Sticky Header */}
-        <div className="sticky -top-0 z-10 p-2 bg-white py-3 shadow-md">
+        <div className="sticky top-0 z-10 p-2 bg-white py-3 shadow-md">
           <div className="flex flex-col sm:flex-row items-center justify-between">
             <h1 className="text-[20px] sm:text-[25px] text-pink-600 font-semibold">
               {job.title}

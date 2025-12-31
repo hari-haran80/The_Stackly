@@ -80,7 +80,7 @@ const JobApplication = ({ jobTitle, onClose }) => {
   return (
     <div className="bg-[rgba(0,0,0,0.6)] top-0 z-50 fixed w-full h-screen flex items-center justify-center">
       <div
-        className={`bg-white p-8 relative rounded-lg shadow-lg w-[100%] md:w-[600px] transform transition-transform duration-300 ease-in-out ${
+        className={`bg-white p-8 relative rounded-lg shadow-lg w-full md:w-150 transform transition-transform duration-300 ease-in-out ${
           isVisible ? "translate-y-0" : "translate-y-full"
         }`}
       >

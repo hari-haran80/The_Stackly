@@ -59,17 +59,17 @@ const CareerPage = () => {
         {careerDetails.map((item, index) => (
           <div
             key={index}
-            className="bg-white hover:scale-110 transition-all duration-300 ease-in-out border-t-4 border-red-600 shadow-pink-600 text-black relative min-h-[300px] rounded-lg gap-3 flex flex-col justify-center items-center w-[250px] p-3 shadow-md"
+            className="bg-white hover:scale-110 transition-all duration-300 ease-in-out border-t-4 border-red-600 shadow-pink-600 text-black relative min-h-75 rounded-lg gap-3 flex flex-col justify-center items-center w-62.5 p-3 shadow-md"
           >
             <img
               src={bgImage1}
-              className="absolute w-[110px] h-[110px] top-7"
+              className="absolute w-27.5 h-27.5 top-7"
               alt=""
             />
             <img
               src={item.icon}
               alt={item.title}
-              className="w-[40px] h-[40px] z-10"
+              className="w-10 h-10 z-10"
             />
             <h2 className="mt-4 text-pink-500 text-xl font-bold">
               {item.title}

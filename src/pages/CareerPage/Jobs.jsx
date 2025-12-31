@@ -67,7 +67,7 @@ const Jobs = () => {
           {JobList.map((job) => (
             <div
               key={job.id}
-              className="w-[95%] relative md:w-[45%] mx-auto border-2 mt-5 md:mt-0 cursor-pointer border-pink-600 bg-white md:mx-0 flex items-center p-3 flex-col  min-h-[300px] rounded-lg"
+              className="w-[95%] relative md:w-[45%] mx-auto border-2 mt-5 md:mt-0 cursor-pointer border-pink-600 bg-white md:mx-0 flex items-center p-3 flex-col  min-h-75 rounded-lg"
             >
               <p className="text-gray-600 absolute text-sm bottom-5 sm:bottom-auto sm:top-2 md:bottom-5 md:top-auto right-2">
                 {new Date(job.posted_on).toLocaleString("en-US", {
