@@ -1,0 +1,28 @@
+.translate-x-full {
+    transform: translateX(100%);
+  }
+  .translate-x-0 {
+    transform: translateX(0);
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  .opacity-100 {
+    opacity: 1;
+  }
+
+  /* Custom animations */
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s ease-in-out forwards;
+  }

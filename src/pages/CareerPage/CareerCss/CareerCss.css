@@ -1,0 +1,45 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes borderRun {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .gradient-box {
+    background: linear-gradient(270deg, #6ee7b7, #9333ea, #6ee7b7);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    position: relative;
+  }
+  
+  .gradient-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    animation: borderRun 2s linear infinite;
+    z-index: 1;
+  }
+  
+  .gradient-box:hover {
+    background: linear-gradient(270deg, #a5f3fc, #c084fc, #a5f3fc);
+    background-size: 200% 200%;
+  }

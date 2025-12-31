@@ -4,6 +4,7 @@ import { AboutUs } from "../pages/AboutUs/AboutUs";
 import { Contact } from "../pages/Contact/Contact";
 import Home_Layout from "../layout/HomeLayout/Home_Layout";
 import { ScrollToTop } from "../components/ScrollToTop/ScrollToTop";
+import CareerPage from "../pages/CareerPage/CareerPage";
 
 const AppRouter = () => (
   <>
@@ -13,6 +14,7 @@ const AppRouter = () => (
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="career" element={<CareerPage />} />
       </Route>
     </Routes>
   </>
