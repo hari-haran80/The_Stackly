@@ -99,7 +99,7 @@
 }
 
 .main-heading .highlight {
-  background: linear-gradient(90deg, #fff 0%, #a53892 100%);
+  background: linear-gradient(90deg, #fff 0%, #38a562 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -126,9 +126,9 @@
 }
 
 .primary-button {
-  background: #a53892;
+  background: rgb(16, 201, 121);
   color: white;
-  border: 2px solid #a53892;
+  border: 2px solid #48a538;
 }
 
 .primary-button:hover {

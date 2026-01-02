@@ -71,7 +71,7 @@ export const Footer = () => {
           <div className="w-75 leading-8">
             <h1 className="tracking-widest">USEFULL LINKS</h1>
             <ul className="mt-4 space-y-2">
-              {["careers", "about", "services", "contact"].map((item) => (
+              {["careers", "about", "contact"].map((item) => (
                 <li key={item}>
                   <Link to={`/${item}`} className="relative inline-block group">
                     {item.charAt(0).toUpperCase() + item.slice(1)}

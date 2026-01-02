@@ -78,7 +78,7 @@ export const Specialize = () => {
       <div className="w-full mt-6">
         <button className="relative overflow-hidden flex py-2 rounded-2xl w-full cursor-pointer gap-4 items-center justify-center group">
           {/* sliding background */}
-          <span className="absolute inset-0 bg-white/10 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+          <span className="pointer-events-none absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
 
           {/* content */}
           <span className="relative z-10 flex items-center gap-4">

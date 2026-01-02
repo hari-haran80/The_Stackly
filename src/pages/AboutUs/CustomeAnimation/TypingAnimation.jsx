@@ -47,8 +47,8 @@ const TypingAnimation = () => {
         Looking For
       </h1>
       <div className="typing-text min-h-20 flex items-center">
-        <span className="text-pink-600">{displayText}</span>
-        <span className="typing-cursor ml-1 h-10 w-0.75 bg-pink-600 animate-pulse"></span>
+        <span className="text-emerald-600">{displayText}</span>
+        <span className="typing-cursor ml-1 h-10 w-0.75 bg-emerald-600 animate-pulse"></span>
       </div>
     </div>
   );

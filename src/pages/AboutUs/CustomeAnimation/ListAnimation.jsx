@@ -76,7 +76,7 @@ const ListAnimation = () => {
       {/* Left Section - Buttons */}
       <div className="w-full lg:w-[50%] flex items-center justify-center">
         <div className="w-full flex items-center flex-col gap-5">
-          <h2 className="text-[32px] text-pink-600">EXPERTISE SERVICES</h2>
+          <h2 className="text-[32px] text-emerald-600">EXPERTISE SERVICES</h2>
           <ul className="flex items-center text-white justify-center flex-col gap-3">
             {services.map((item, index) => (
               <li
